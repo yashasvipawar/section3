@@ -1,0 +1,110 @@
+pawar@DESKTOP-O1H73O2 MINGW64 ~
+$ mkdir section3
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~
+$ cd section3
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3
+$ git init
+Initialized empty Git repository in C:/Users/pawar/section3/.git/
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git commit -m "readme file"
+[master (root-commit) 4f551b1] readme file
+ 1 file changed, 3 insertions(+)
+ create mode 100644 README.txt
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git branch js-assign
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git checkout js-assign
+Switched to branch 'js-assign'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$  git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git commit -m "commit js-asign"
+[js-assign ae5f498] commit js-asign
+ 1 file changed, 3 insertions(+)
+ create mode 100644 js-assign.js
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git commit -m "commit js-asign change"
+[js-assign cf4efb6] commit js-asign change
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git checkout master
+Switched to branch 'master'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git commit -m "commit js-asign change in master"
+[master 543df1e] commit js-asign change in master
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git checkout js-assign
+Switched to branch 'js-assign'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git add .
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git commit -m "commit js-asign change in js"
+[js-assign 29d9038] commit js-asign change in js
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git status
+On branch js-assign
+nothing to commit, working tree clean
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (js-assign)
+$ git checkout master
+Switched to branch 'master'
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master)
+$ git merge js-assign
+Auto-merging README.txt
+CONFLICT (content): Merge conflict in README.txt
+Automatic merge failed; fix conflicts and then commit the result.
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$ git branch -d js-assign
+error: The branch 'js-assign' is not fully merged.
+If you are sure you want to delete it, run 'git branch -D js-assign'.
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$ git branch -D js-assign
+Deleted branch js-assign (was 29d9038).
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$ git config --global user.username yashasvipawar
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$ git remote add origin https://github.com/yashasvipawar/section3.git
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$ git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 600 bytes | 200.00 KiB/s, done.
+Total 6 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/yashasvipawar/section3.git
+ * [new branch]      master -> master
+
+pawar@DESKTOP-O1H73O2 MINGW64 ~/section3 (master|MERGING)
+$
